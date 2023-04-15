@@ -19,9 +19,7 @@ const CartSummary = () => (
           <div className="cart-summary-container">
             <div className="order-total-value">
               <h1 className="order-total-label">Order Total:</h1>
-              <p className="order-total-label" testid="total-price">
-                Rs {total} /-
-              </p>
+              <p className="order-total-label">Rs {total} /-</p>
             </div>
             <p className="total-items">{cartData.length} Items in cart</p>
             <Link to="/payment-success">

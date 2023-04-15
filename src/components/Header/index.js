@@ -15,7 +15,7 @@ const Header = props => {
   }
 
   return (
-    <nav className="nav-header" fixed="top">
+    <nav className="nav-header">
       <div className="nav-content-container">
         <ul className="nav-bar-mobile-container">
           <Link to="/" className="nav-link">

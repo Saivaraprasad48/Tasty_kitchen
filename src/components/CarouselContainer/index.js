@@ -59,10 +59,7 @@ class CarouselContainer extends Component {
   }
 
   renderLoadingView = () => (
-    <div
-      className="restaurant-loader-container"
-      testid="restaurants-offers-loader"
-    >
+    <div className="restaurant-loader-container">
       <Loader type="Audio" color="#F7931E" height="50" width="50" />
     </div>
   )
@@ -76,8 +73,8 @@ class CarouselContainer extends Component {
       />
       <h1 className="restaurant-failure-heading-text">Page Not Found</h1>
       <p className="restaurant-failure-description">
-        we are sorry, the page you requested could not be found Please go back
-        to the homepage
+        we are sorry, the page you requested could not be foundPlease go back to
+        the homepage
       </p>
       <button type="button" className="retry-button">
         Home Page

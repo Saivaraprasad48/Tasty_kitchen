@@ -114,7 +114,7 @@ class LoginForm extends Component {
               alt="website logo"
               className="login-website-logo-desktop-img"
             />
-            <h1 className="logo-content">Murali Kitchens</h1>
+            <h1 className="logo-content">Tasty Kitchens</h1>
           </div>
 
           <h1 className="login-heading">Login</h1>

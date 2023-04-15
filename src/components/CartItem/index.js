@@ -28,7 +28,7 @@ const CartItem = props => (
       const totalPrice = cost * quantity
 
       return (
-        <li className="cart-item" testid="cartItem">
+        <li className="cart-item">
           <div className="cart-product-title-brand-container">
             <img className="cart-product-image" src={imageUrl} alt={name} />
             <h1 className="cart-product-title">{name}</h1>
@@ -38,18 +38,14 @@ const CartItem = props => (
               <button
                 type="button"
                 className="quantity-controller-button"
-                testid="decrement-quantity"
                 onClick={onClickDecrement}
               >
                 <BsDashSquare color="#52606D" size={12} />
               </button>
-              <p className="cart-quantity" testid="item-quantity">
-                {quantity}
-              </p>
+              <p className="cart-quantity">{quantity}</p>
               <button
                 type="button"
                 className="quantity-controller-button"
-                testid="increment-quantity"
                 onClick={onClickIncrement}
               >
                 <BsPlusSquare color="#52606D" size={12} />
@@ -57,9 +53,7 @@ const CartItem = props => (
             </div>
           </div>
           <div className="total-price-remove-container">
-            <p className="cart-total-price" testid="total-price">
-              Rs {totalPrice}/-
-            </p>
+            <p className="cart-total-price">Rs {totalPrice}/-</p>
             <button
               className="remove-button"
               type="button"
@@ -72,7 +66,6 @@ const CartItem = props => (
             className="delete-button"
             type="button"
             onClick={onRemoveCartItem}
-            testid="remove"
           >
             <AiFillCloseCircle color="#616E7C" size={20} />
           </button>

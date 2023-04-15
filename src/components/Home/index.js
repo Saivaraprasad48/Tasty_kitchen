@@ -101,10 +101,7 @@ class Home extends Component {
   }
 
   renderLoadingView = () => (
-    <div
-      className="restaurant-loader-container"
-      testid="restaurants-list-loader"
-    >
+    <div className="restaurant-loader-container">
       <Loader type="Audio" color="#F7931E" height="50" width="50" />
     </div>
   )
@@ -118,8 +115,8 @@ class Home extends Component {
       />
       <h1 className="restaurant-failure-heading-text">Page Not Found</h1>
       <p className="restaurant-failure-description">
-        we are sorry, the page you requested could not be found Please go back
-        to the homepage
+        we are sorry, the page you requested could not be foundPlease go back to
+        the homepage
       </p>
       <Link to="/">
         <button type="button" className="retry-button">
@@ -208,19 +205,16 @@ class Home extends Component {
           <button
             type="button"
             className="page-controller-button"
-            testid="pagination-left-button"
             onClick={this.onClickLeft}
           >
             <MdKeyboardArrowLeft color="#52606D" size={20} />
           </button>
           <p className="page-no-quantity">
-            <span testid="active-page-number">{activePage}</span> of{' '}
-            {Math.ceil(totalItems / 9)}
+            <span>{activePage}</span> of {Math.ceil(totalItems / 9)}
           </p>
           <button
             type="button"
             className="page-controller-button"
-            testid="pagination-right-button"
             onClick={this.onClickRight}
           >
             <MdKeyboardArrowRight color="#52606D" size={20} />
