@@ -1,6 +1,6 @@
-### Swiggy - Zomato Clone
+# Swiggy - Zomato Clone
 
-# A Real time food delivery application clone 
+### A Real time food delivery application clone 
 
 This application is similar to swizzy or zomato application where user can 
 * Login with creditials {(default) => username : rahul ; password : rahul@2021}
